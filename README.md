@@ -1,6 +1,8 @@
 # Block AI Bots Firewall Rule
 
-A firewall rule that identifies AI bots. The rule defaults to the "log action". Set to "Deny" to actually block these bots.
+A firewall rule that identifies bots known to be used in AI training based on web content.
+
+The rule defaults to the "log action". Set to "Deny" to actually block these bots.
 
 ## Consider customization
 
