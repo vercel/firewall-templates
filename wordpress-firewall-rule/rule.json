@@ -5,7 +5,7 @@
     "action": {
       "mitigate": {
         "redirect": null,
-        "action": "deny",
+        "action": "log",
         "rateLimit": null,
         "actionDuration": null
       }
