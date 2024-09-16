@@ -2,7 +2,7 @@
 
 A firewall rule template designed to implement rate limiting for API requests, helping to protect your API from abuse and ensure fair usage.
 
-The rule defaults to the "log action". Set to "Deny" to actually block these bots.
+The rule defaults to the "log action". Set to "Deny" to actually block requests.
 
 ## Consider customization
 
