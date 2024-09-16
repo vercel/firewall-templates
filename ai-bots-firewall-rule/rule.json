@@ -1,0 +1,25 @@
+{
+  "name": "Detect AI Bots",
+  "active": true,
+  "description": "",
+  "action": {
+    "mitigate": {
+      "redirect": null,
+      "action": "log",
+      "rateLimit": null,
+      "actionDuration": null
+    }
+  },
+  "id": "",
+  "conditionGroup": [
+    {
+      "conditions": [
+        {
+          "type": "user_agent",
+          "op": "re",
+          "value": "AI2Bot|Ai2Bot-Dolma|Amazonbot|Applebot|Applebot-Extended|Bytespider|CCBot|ChatGPT-User|Claude-Web|ClaudeBot|Diffbot|FacebookBot|FriendlyCrawler|GPTBot|Google-Extended|GoogleOther|GoogleOther-Image|GoogleOther-Video|ICC-Crawler|ImagesiftBot|Meta-ExternalAgent|Meta-ExternalFetcher|OAI-SearchBot|PerplexityBot|PetalBot|Scrapy|Timpibot|VelenPublicWebCrawler|Webzio-Extended|YouBot|anthropic-ai|cohere-ai|facebookexternalhit|img2dataset|omgili|omgilibot"
+        }
+      ]
+    }
+  ]
+}
