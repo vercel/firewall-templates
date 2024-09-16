@@ -1,0 +1,33 @@
+{
+  "name": "Rate limit API requests",
+  "active": true,
+  "description": "",
+  "action": {
+      "mitigate": {
+          "redirect": null,
+          "action": "rate_limit",
+          "rateLimit": {
+              "limit": 100,
+              "action": "rate_limit",
+              "window": 60,
+              "algo": "fixed_window",
+              "keys": [
+                  "ip"
+              ]
+          },
+          "actionDuration": "15m"
+      }
+  },
+  "id": "rule_rate_limit_api_requests",
+  "conditionGroup": [
+      {
+          "conditions": [
+              {
+                  "type": "path",
+                  "op": "pre",
+                  "value": "/api"
+              }
+          ]
+      }
+  ]
+}
