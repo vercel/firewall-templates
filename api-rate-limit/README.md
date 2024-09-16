@@ -12,3 +12,7 @@ The generated firewall rule provides a basic rate limiting structure. Consider c
 2. Time window: Modify the duration for which the request limit applies.
 3. Allow list: Configure exceptions for trusted entities across 15+ parameters.
 4. Response: Customize the response sent when a client exceeds the rate limit.
+
+## Availability
+
+Rate limiting is available to customers on Pro or Enterprise plans.
