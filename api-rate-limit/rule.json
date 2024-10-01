@@ -18,7 +18,6 @@
           "actionDuration": "15m"
       }
   },
-  "id": "rule_rate_limit_api_requests",
   "conditionGroup": [
       {
           "conditions": [
