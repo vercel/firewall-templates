@@ -1,0 +1,31 @@
+{
+    "name": "Block traffic from OFAC-sanctioned countries",
+    "active": true,
+    "description": "Blocks traffic from OFAC-sanctioned countries and enforces a one-hour persistent block after the first violation.",
+    "action": {
+        "mitigate": {
+            "redirect": null,
+            "action": "deny",
+            "rateLimit": null,
+            "actionDuration": "1h"
+        }
+    },
+    "id": "rule_block_traffic_from_ofac_sanctioned_countries",
+    "conditionGroup": [
+        {
+            "conditions": [
+                {
+                    "type": "geo_country",
+                    "op": "inc",
+                    "value": [
+                        "SY",
+                        "IR",
+                        "RU",
+                        "CU",
+                        "KP"
+                    ]
+                }
+            ]
+        }
+    ]
+}
