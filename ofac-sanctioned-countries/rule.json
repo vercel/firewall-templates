@@ -10,7 +10,7 @@
             "actionDuration": "1h"
         }
     },
-    "id": "rule_block_traffic_from_ofac_sanctioned_countries",
+    "id": "",
     "conditionGroup": [
         {
             "conditions": [
