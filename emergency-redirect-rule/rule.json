@@ -1,0 +1,28 @@
+{
+    "name": "Emergency redirect",
+    "active": true,
+    "description": "Mistakes happen. Use this to create a redirect that immediately propagates globally.",
+    "action": {
+      "mitigate": {
+        "redirect": {
+            "location": "/correct-path",
+            "permanent": false
+        },
+        "action": "redirect",
+        "rateLimit": null,
+        "actionDuration": null
+      }
+    },
+    "id": "",
+    "conditionGroup": [
+                    {
+                        "conditions": [
+                            {
+                                "type": "path",
+                                "op": "eq",
+                                "value": "/wrong-path"
+                            }
+                        ]
+                    }
+                ]
+  }
