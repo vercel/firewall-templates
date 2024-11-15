@@ -16,4 +16,4 @@ The generated firewall rule provides a basic redirect structure. Consider custom
 
 ## Availability
 
-This emergency redirect solution can be implemented by users with access to a Web Application Firewall management interface.
+This emergency redirect solution can be implemented by users on all plans.
