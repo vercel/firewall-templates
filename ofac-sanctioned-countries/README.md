@@ -1,4 +1,4 @@
-# Block OFAC Sanctioned Countries
+# Block OFAC-Sanctioned Countries
 
 This template provides a preset, customizable config for Vercel Firewall rule to block traffic from countries sanctioned by the Office of Foreign Assets Control (OFAC). This template may help compliance with regulatory requirements by preventing access from these regions.
 
