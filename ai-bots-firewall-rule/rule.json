@@ -17,7 +17,13 @@
         {
           "type": "user_agent",
           "op": "re",
-          "value": "AI2Bot|Ai2Bot-Dolma|Amazonbot|Applebot|Applebot-Extended|Bytespider|CCBot|ChatGPT-User|Claude-Web|ClaudeBot|Diffbot|FacebookBot|FriendlyCrawler|GPTBot|Google-Extended|GoogleOther|GoogleOther-Image|GoogleOther-Video|ICC-Crawler|ImagesiftBot|Meta-ExternalAgent|Meta-ExternalFetcher|OAI-SearchBot|PerplexityBot|PetalBot|Scrapy|Timpibot|VelenPublicWebCrawler|Webzio-Extended|YouBot|anthropic-ai|cohere-ai|facebookexternalhit|img2dataset|omgili|omgilibot"
+          "value": "AI2Bot|Ai2Bot-Dolma|Amazonbot|anthropic-ai|Applebot|Applebot-Extended|Brightbot 1\\.0|Bytespider|CCBot|ChatGPT-User|Claude-Web|ClaudeBot|cohere-ai|cohere-training-data-crawler|Crawlspace|Diffbot|DuckAssistBot|FacebookBot|FriendlyCrawler|Google-Extended|GoogleOther|GoogleOther-Image|GoogleOther-Video|GPTBot|iaskspider/2\\.0|ICC-Crawler|ImagesiftBot|img2dataset|ISSCyberRiskCrawler|Kangaroo Bot|Meta-ExternalAgent|Meta-ExternalFetcher|OAI-SearchBot|omgili|omgilibot|PanguBot|PerplexityBot|PetalBot|Scrapy|SemrushBot-OCOB|SemrushBot-SWA|Sidetrade indexer bot|Timpibot|VelenPublicWebCrawler|Webzio-Extended|YouBot"
+        },
+        {
+          "type": "user_agent",
+          "op": "re",
+          "neg": true,
+          "value": "facebookexternalhit\\/1\\.1\\sFacebot\\sTwitterbot\\/1\\.0"
         }
       ]
     }
