@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Automotives - Premium Vehicles</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+        .logo {
+            max-width: 300px;
+            margin-bottom: 10px;
+            filter: invert(1);
+        }
+        .tagline {
+            font-style: italic;
+            letter-spacing: 1px;
+            margin-top: 5px;
+        }
+        nav {
+            background-color: #111;
+            padding: 15px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #aaa;
+        }
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        }
+        .hero p {
+            font-size: 1.2em;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        .section {
+            margin-bottom: 50px;
+        }
+        .section-title {
+            border-bottom: 2px solid #fff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .vehicle-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .vehicle-card {
+            background-color: #111;
+            padding: 20px;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .vehicle-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(255,255,255,0.1);
+        }
+        .vehicle-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border-radius: 3px;
+        }
+        .color-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        .color-circle {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .color-circle:hover {
+            transform: scale(1.2);
+        }
+        .price {
+            font-weight: bold;
+            color: #ddd;
+            margin: 10px 0;
+        }
+        .offers {
+            background-color: #111;
+            padding: 30px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        .offer-item {
+            margin-bottom: 20px;
+        }
+        .offer-item h3 {
+            color: #fff;
+            border-left: 3px solid #fff;
+            padding-left: 10px;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 50px;
+            border-top: 1px solid #333;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .contact-info h3 {
+            margin-bottom: 5px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #fff;
+            color: #000;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background-color 0.3s, color 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .btn:hover {
+            background-color: #000;
+            color: #fff;
+            outline: 1px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Black Minimalist Wolf and Moon Logo (1).png" alt="Royal Automotives Logo" class="logo">
+        <p class="tagline">Loyal at service</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#cars">Cars</a></li>
+            <li><a href="#bikes">Bikes</a></li>
+            <li><a href="#trucks">Trucks</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="hero">
+            <div>
+                <h1>Experience the Royal Difference</h1>
+                <p>Premium vehicles with unmatched service and loyalty that lasts</p>
+                <a href="#contact" class="btn">Book a Test Drive</a>
+            </div>
+        </div>
+
+        <section id="cars" class="section">
+            <h2 class="section-title">Premium Cars</h2>
+            <div class="vehicle-grid">
+                <div class="vehicle-card">
+                    <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Tata Harrier" class="vehicle-image">
+                    <h3>Tata Harrier</h3>
+                    <div class="price">Starting Price: ₹15 - 26 Lakh</div>
+                    <div class="color-options">
+                        <div class="color-circle" style="background-color: #000;" title="Black"></div>
+                        <div class="color-circle" style="background-color: #808080;" title="Gray"></div>
+                        <div class="color-circle" style="background-color: #008000;" title="Green"></div>
+                        <div class="color-circle" style="background-color: #fff; border: 1px solid #000;" title="White"></div>
+                        <div class="color-circle" style="background-color: #6B8E23;" title="Olive Green"></div>
+                        <div class="color-circle" style="background-color: #FFA500;" title="Orange"></div>
+                        <div class="color-circle" style="background-color: #FF0000;" title="Red"></div>
+                    </div>
+                    <p>Available in 7 premium colors</p>
+                    <a href="#contact" class="btn">Enquire Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="bikes" class="section">
+            <h2 class="section-title">Premium Bikes</h2>
+            <div class="vehicle-grid">
+                <div class="vehicle-card">
+                    <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Royal Enfield GT650" class="vehicle-image">
+                    <h3>Royal Enfield GT650</h3>
+                    <div class="price">Starting Price: ₹3 - 5 Lakh</div>
+                    <div class="color-options">
+                        <div class="color-circle" style="background-color: #C0C0C0;" title="Silver"></div>
+                        <div class="color-circle" style="background-color: #000;" title="Black"></div>
+                        <div class="color-circle" style="background-color: #0000FF;" title="Blue"></div>
+                        <div class="color-circle" style="background-color: #FF0000;" title="Red"></div>
+                        <div class="color-circle" style="background-color: #6B8E23;" title="Olive Green"></div>
+                    </div>
+                    <p>Available in 5 classic colors</p>
+                    <a href="#contact" class="btn">Enquire Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="trucks" class="section">
+            <h2 class="section-title">Commercial Trucks</h2>
+            <div class="vehicle-grid">
+                <div class="vehicle-card">
+                    <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Bharat Benz Truck" class="vehicle-image">
+                    <h3>Bharat Benz</h3>
+                    <div class="price">Starting Price: ₹17 - 22 Lakh</div>
+                    <div class="color-options">
+                        <div class="color-circle" style="background-color: #FF0000;" title="Red"></div>
+                        <div class="color-circle" style="background-color: #000;" title="Black"></div>
+                        <div class="color-circle" style="background-color: #0000FF;" title="Blue"></div>
+                        <div class="color-circle" style="background-color: #C0C0C0;" title="Silver"></div>
+                    </div>
+                    <p>Available in 4 professional colors</p>
+                    <a href="#contact" class="btn">Enquire Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="offers" class="section">
+            <h2 class="section-title">Exclusive Offers</h2>
+            <div class="offers">
+                <div class="offer-item">
+                    <h3>First Service Free</h3>
+                    <p>First service is completely free for all cars and bikes purchased from Royal Automotives.</p>
+                </div>
+                <div class="offer-item">
+                    <h3>First Purchase Bonus</h3>
+                    <p>For our first-time customers purchasing from our dealership:</p>
+                    <ul>
+                        <li><strong>Bike Purchase:</strong> Free premium helmet with your Royal Enfield</li>
+                        <li><strong>Car Purchase:</strong> Your choice of one free customization item</li>
+                        <li><strong>Truck Purchase:</strong> Complimentary oil check-up after first service</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Visit Us</h2>
+            <div class="contact-info">
+                <h3>Main Branch</h3>
+                <p>Vijayawada, Andhra Pradesh</p>
+                
+                <h3>Contact Number</h3>
+                <p>7093809109</p>
+                
+                <h3>Business Hours</h3>
+                <p>Monday - Saturday: 9:00 AM - 8:00 PM</p>
+                <p>Sunday: 10:00 AM - 4:00 PM</p>
+                
+                <a href="tel:7093809109" class="btn">Call Now</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Royal Automotives. All Rights Reserved.</p>
+        <p>Loyal at service</p>
+    </footer>
+</body>
+</html>
