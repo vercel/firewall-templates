@@ -1,7 +1,7 @@
 {
-    "name": "Block traffic from OFAC-sanctioned countries",
+    "name": "Block traffic from OFAC-sanctioned countries and territories",
     "active": true,
-    "description": "Blocks traffic from OFAC-sanctioned countries and enforces a one-hour persistent block after the first violation.",
+    "description": "Blocks traffic from OFAC-sanctioned countries and territories, and enforces a one-hour persistent block after the first violation.",
     "action": {
         "mitigate": {
             "redirect": null,
@@ -24,6 +24,26 @@
                         "CU",
                         "KP"
                     ]
+                }
+            ]
+        },
+        {
+            "conditions": [
+                {
+                    "op": "eq",
+                    "type": "geo_country",
+                    "value": "UA",
+                    "key": "X-Vercel-IP-Country"
+                },
+                {
+                    "op": "inc",
+                    "type": "geo_country_region",
+                    "value": [
+                        "43",
+                        "14",
+                        "09"
+                    ],
+                    "key": "X-Vercel-IP-Country-Region"
                 }
             ]
         }
