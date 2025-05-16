@@ -1,7 +1,7 @@
 {
-    "name": "Block traffic from OFAC-sanctioned countries and territories",
+    "name": "Block traffic from OFAC-sanctioned countries and regions",
     "active": true,
-    "description": "Blocks traffic from OFAC-sanctioned countries and territories, and enforces a one-hour persistent block after the first violation.",
+    "description": "Blocks traffic from OFAC-sanctioned countries and regions, and enforces a one-hour persistent block after the first violation.",
     "action": {
         "mitigate": {
             "redirect": null,
