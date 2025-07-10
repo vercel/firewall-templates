@@ -18,7 +18,6 @@
                     "type": "geo_country",
                     "op": "inc",
                     "value": [
-                        "SY",
                         "IR",
                         "RU",
                         "CU",
